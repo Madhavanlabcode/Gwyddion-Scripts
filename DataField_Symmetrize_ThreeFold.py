@@ -1,4 +1,4 @@
-### threeFoldSym.py
+### DataField_Symmetrize_ThreeFold.py
 ###
 ### This function allows quick three fold symmetrization of an image
 ### (intended to be of a FFT)
@@ -8,7 +8,6 @@
 ###
 
 import gwy
-
 
 plugin_menu="/Symmetrize/Three Fold Symmetrization"
 plugin_type="PROCESS"
