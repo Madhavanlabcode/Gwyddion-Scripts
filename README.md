@@ -22,7 +22,7 @@ If you decide to make your own scripts, you will undoubtably look for Gwyddion's
 
 ## List of Necessary Python Libraries
 
-In order to have the full capabiltiy of all the scripts here, you need have some extra python modules downloaded. As you write scripts and want to include libraries, think if you can use ones that are already required or are robust to updates. If you do add a necessary library, place it here.
+In order to have the full capabiltiy of all the scripts here, you need have some extra python modules downloaded. As you write scripts and want to include python libraries, think if you can use ones that are already required or are robust to updates. If you do add a necessary library, place it here.
 
 If you need to add a library to python, I find the easiest way to do so is by using **pip**. **Pip** is a python package downloaded on install which helps install additional python libraries. It is found in the Scritps folder of the python directory (e.g. C:\Python27). Open the command line in this folder and write **pip install "python library here"**. For example, to install NumPy write **pip install numpy**.
 
