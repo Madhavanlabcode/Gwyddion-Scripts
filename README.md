@@ -1,6 +1,6 @@
 # Gwyddion-Scripts
 
-This repository is meant to host python scripts written and maintained by the Madhavan group to be used with the software Gwyddion,.
+This repository is meant to host python scripts written and maintained by the Madhavan group to be used with the software Gwyddion.
 
 ## What is Gwyddion? 
 
@@ -8,7 +8,7 @@ From the website, "Gwyddion is a modular program for SPM (scanning probe microsc
 
 ## How do I install Gwyddion to use these scripts?
 
-Enabling python scripting or Pygwy as it called in Gwyddion is not trivial for several reasons having to do with python versions, pygwy dependencies, and different versions of Gwyddion. However here are the steps that are recommended from the Gwyddion website found [here](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html#installation-ms-windows-pygwy).
+Enabling python scripting or, Pygwy as it called in Gwyddion, is not trivial for several reasons having to do with python versions, pygwy dependencies, and different versions of Gwyddion. However here are the steps that are recommended from the Gwyddion website found [here](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html#installation-ms-windows-pygwy).
 
 1. [Download the 32-bit version of Gwyddion](http://gwyddion.net/download.php#stable-windows)
 2. [Download Python 2.7.13](https://www.python.org/downloads/release/python-2713/)
