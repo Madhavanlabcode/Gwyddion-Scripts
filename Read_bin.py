@@ -46,7 +46,7 @@ def load(filename):
 		bias=struct.unpack('>d',f.read(8))[0]
 		setCurrent=struct.unpack('>d',f.read(8))[0]
 		
-		#load the metadata
+
 		
 		metaC=gwy.Container()
 		
@@ -72,6 +72,7 @@ def load(filename):
 		dField=gwy.DataField(nx,ny,abs(xspacing[0]-xspacing[-1]),abs(yspacing[0]-yspacing[-1]),True)
 		dField.set_si_unit_xy(gwy.SIUnit('m'))
 		dField.set_si_unit_z(gwy.SIUnit('V'))
+
 		
 		for x in range(nx):
 			for y in range(ny):
