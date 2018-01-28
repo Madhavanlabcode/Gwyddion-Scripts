@@ -46,6 +46,14 @@ def load(filename):
 		bias=struct.unpack('>d',f.read(8))[0]
 		setCurrent=struct.unpack('>d',f.read(8))[0]
 		
+
+		
+		metaC=gwy.Container()
+		
+		
+		metaC.set_string_by_name("Bias: ", str(bias))
+		mainC.set_object_by_name("/0/meta",metaC)
+		
 		#initialize the dimensions and data arrays
 		data=np.zeros((nx,ny))
 		xspacing=np.zeros(nx)
@@ -61,7 +69,10 @@ def load(filename):
 			for y in range(ny):
 				data[x,y]=struct.unpack('>d',f.read(8))[0]
 				
-		dField=gwy.DataField(nx,ny,xspacing[-1],yspacing[-1],True)
+		dField=gwy.DataField(nx,ny,abs(xspacing[0]-xspacing[-1]),abs(yspacing[0]-yspacing[-1]),True)
+		dField.set_si_unit_xy(gwy.SIUnit('m'))
+		dField.set_si_unit_z(gwy.SIUnit('V'))
+
 		
 		for x in range(nx):
 			for y in range(ny):
